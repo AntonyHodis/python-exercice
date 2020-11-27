@@ -103,7 +103,7 @@ def exerciceGeneG():
     #On crée notre variable g avec le nombre de lettre que l'on veut à chaque fois
     g = generateur(2)
     
-    #On affiche le tout
+    #On affiche le générateur
     for a in g:
 
         print(a)
