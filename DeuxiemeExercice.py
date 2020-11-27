@@ -1,4 +1,4 @@
-
+from itertools import chain, combinations
 
 def exercicePorteBonheur():
 
@@ -109,11 +109,15 @@ def exerciceGeneG():
 
 def exercicePowerSet():
 
-    def powerset(seq):
+    def powerset(seq):        
 
-        
+        return list(chain.from_iterable(combinations(seq, r) for r in range(len(seq) + 1)))
 
+    L = [1,2,3]
+
+    print(powerset(L))
     
+      
 
 
 if __name__ == "__main__":
